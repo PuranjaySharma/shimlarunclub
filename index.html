@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Shimla Run Club</title>
+
   <style>
     * {
       margin: 0;
@@ -33,19 +34,19 @@
     h2 {
       font-size: 1.5rem;
       font-weight: 400;
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
       letter-spacing: 1px;
     }
 
-    .run-links a {
-      font-size: 1.3rem;
-      text-decoration: underline;
-      color: #1a73e8; /* blue link color */
-      transition: opacity 0.2s ease;
+    .register-container {
+      margin-top: 10px;
     }
 
-    .run-links a:hover {
-      opacity: 0.6;
+    .luma-checkout--button {
+      font-size: 1.2rem;
+      text-decoration: underline;
+      color: #1a73e8;
+      cursor: pointer;
     }
 
     @media (max-width: 600px) {
@@ -56,21 +57,30 @@
       h2 {
         font-size: 1.2rem;
       }
-
-      .run-links a {
-        font-size: 1.1rem;
-      }
     }
   </style>
+
 </head>
+
 <body>
 
   <h1>SHIMLA RUN CLUB</h1>
-  <h2>UPCOMING RUN</h2>
+  <h2>UPCOMING RUN – MARCH 8</h2>
 
-  <div class="run-links">
-    <a href="https://luma.com/dl1dceu3">SUNDAY - MARCH 8 - EASY RUN</a>
+  <div class="register-container">
+
+    <a
+      href="https://luma.com/event/evt-wbo3apKClWbpDIk"
+      class="luma-checkout--button"
+      data-luma-action="checkout"
+      data-luma-event-id="evt-wbo3apKClWbpDIk"
+    >
+      Register for Event
+    </a>
+
   </div>
+
+  <script id="luma-checkout" src="https://embed.lu.ma/checkout-button.js"></script>
 
 </body>
 </html>
