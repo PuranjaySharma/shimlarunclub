@@ -1,86 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Shimla Run Club</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shimla Run Club</title>
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+<style>
 
-    body {
-      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      background-color: #ffffff;
-      color: #000000;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 20px;
-    }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
-    h1 {
-      font-size: 3rem;
-      font-weight: 500;
-      margin-bottom: 2rem;
-    }
+body{
+font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
 
-    h2 {
-      font-size: 1.5rem;
-      font-weight: 400;
-      margin-bottom: 2rem;
-      letter-spacing: 1px;
-    }
+/* Background image */
+background-image: linear-gradient(
+rgba(0,0,0,0.35),
+rgba(0,0,0,0.35)
+),
+url("images/run-bg.jpg");
 
-    .register-container {
-      margin-top: 10px;
-    }
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+}
 
-    .luma-checkout--button {
-      font-size: 1.2rem;
-      text-decoration: underline;
-      color: #1a73e8;
-      cursor: pointer;
-    }
+.container{
+padding:20px;
+}
 
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 2rem;
-      }
+h1{
+font-size:3rem;
+font-weight:500;
+margin-bottom:20px;
+letter-spacing:1px;
+}
 
-      h2 {
-        font-size: 1.2rem;
-      }
-    }
-  </style>
+h2{
+font-size:1.5rem;
+margin-bottom:25px;
+}
 
+.luma-checkout--button{
+font-size:1.2rem;
+color:#4da3ff;
+text-decoration:underline;
+cursor:pointer;
+}
+
+/* Mobile */
+
+@media (max-width:600px){
+
+h1{
+font-size:2rem;
+}
+
+h2{
+font-size:1.2rem;
+}
+
+}
+
+</style>
 </head>
 
 <body>
 
-  <h1>SHIMLA RUN CLUB</h1>
-  <h2>UPCOMING RUN – MARCH 15</h2>
+<div class="container">
 
-  <div class="register-container">
+<h1>SHIMLA RUN CLUB</h1>
+<h2>UPCOMING RUN — MARCH 15</h2>
 
-    <a
-      href="https://luma.com/event/evt-wbo3apKClWbpDIk"
-      class="luma-checkout--button"
-      data-luma-action="checkout"
-      data-luma-event-id="evt-wbo3apKClWbpDIk"
-    >
-      Register for Sunday Run
-    </a>
+<a
+href="https://luma.com/event/evt-wbo3apKClWbpDIk"
+class="luma-checkout--button"
+data-luma-action="checkout"
+data-luma-event-id="evt-wbo3apKClWbpDIk">
+Register for Sunday Run
+</a>
 
-  </div>
+</div>
 
-  <script id="luma-checkout" src="https://embed.lu.ma/checkout-button.js"></script>
+<script id="luma-checkout" src="https://embed.lu.ma/checkout-button.js"></script>
 
 </body>
 </html>
