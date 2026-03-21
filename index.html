@@ -1,106 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shimla Run Club</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shimla Run Club</title>
 
-<style>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      color: white;
+      background-image:
+        linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+        url("images/run-bg.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
 
-body{
-font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:space-between;
-color:white;
+    .top {
+      padding: 40px 20px 20px;
+      text-align: center;
+    }
 
-/* background image */
-background-image: linear-gradient(
-rgba(0,0,0,0.35),
-rgba(0,0,0,0.35)
-),
-url("images/run-bg.jpg");
+    h1 {
+      font-size: 3rem;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
 
-background-size:cover;
-background-position:center;
-background-repeat:no-repeat;
-}
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 400;
+    }
 
-/* top section */
+    .bottom {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding: 20px 20px 40px;
+    }
 
-.top{
-padding:40px 20px;
-text-align:center;
-}
+    .iframe-wrapper {
+      width: 100%;
+      max-width: 600px;
+    }
 
-h1{
-font-size:3rem;
-font-weight:500;
-margin-bottom:10px;
-}
+    .iframe-wrapper iframe {
+      width: 100%;
+      height: 450px;
+      border: 1px solid #bfcbda88;
+      border-radius: 4px;
+      display: block;
+    }
 
-h2{
-font-size:1.5rem;
-font-weight:400;
-}
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
 
-/* bottom button */
+      h2 {
+        font-size: 1.1rem;
+      }
 
-.bottom{
-padding:40px;
-text-align:center;
-}
+      .top {
+        padding: 30px 16px 16px;
+      }
 
-.luma-checkout--button{
-font-size:1.3rem;
-color:#4da3ff;
-text-decoration:underline;
-cursor:pointer;
-}
+      .bottom {
+        padding: 16px 16px 24px;
+      }
 
-/* mobile */
-
-@media (max-width:600px){
-
-h1{
-font-size:2rem;
-}
-
-h2{
-font-size:1.2rem;
-}
-
-}
-
-</style>
+      .iframe-wrapper iframe {
+        height: 420px;
+      }
+    }
+  </style>
 </head>
-
 <body>
 
-<div class="top">
-  <h1>SHIMLA RUN CLUB</h1>
-  <h2>UPCOMING RUN — MARCH 22</h2>
-</div>
+  <div class="top">
+    <h1>SHIMLA RUN CLUB</h1>
+    <h2>UPCOMING RUN — MARCH 22</h2>
+  </div>
 
-<div class="bottom">
-  <a
-    href="https://luma.com/event/evt-ZyAtQJ8u0FgNiz9"
-    class="luma-checkout--button"
-    data-luma-action="checkout"
-    data-luma-event-id="evt-ZyAtQJ8u0FgNiz9"
-  >
-    Register for Sunday
-  </a>
-</div>
-
-<script id="luma-checkout" src="https://embed.lu.ma/checkout-button.js"></script>
+  <div class="bottom">
+    <div class="iframe-wrapper">
+      <iframe
+        src="https://luma.com/embed/event/evt-ZyAtQJ8u0FgNiz9/simple"
+        width="600"
+        height="450"
+        frameborder="0"
+        style="border: 1px solid #bfcbda88; border-radius: 4px;"
+        allow="fullscreen; payment"
+        aria-hidden="false"
+        tabindex="0"
+      ></iframe>
+    </div>
+  </div>
 
 </body>
 </html>
