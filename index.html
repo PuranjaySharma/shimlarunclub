@@ -45,11 +45,14 @@ h2{
   font-weight:400;
 }
 
+/* FIXED BOTTOM SECTION */
 .bottom{
   padding:40px;
-  text-align:center;
+  display:flex;
+  justify-content:center;
 }
 
+/* BUTTON STYLE */
 .luma-checkout--button{
   font-size:1.3rem;
   color:#4da3ff;
@@ -73,16 +76,18 @@ h2{
 
 <div class="top">
   <h1>SHIMLA RUN CLUB</h1>
-  <h2>UPCOMING RUNS<h2>
+  <h2>UPCOMING RUNS</h2>
 </div>
 
-<a
-  href="https://luma.com/event/evt-mlDqfEvES5J1Dfi"
-  class="luma-checkout--button"
-  data-luma-action="checkout"
-  data-luma-event-id="evt-mlDqfEvES5J1Dfi">
-  Register for Sunday Run
-</a>
+<div class="bottom">
+  <a
+    href="https://luma.com/event/evt-mlDqfEvES5J1Dfi"
+    class="luma-checkout--button"
+    data-luma-action="checkout"
+    data-luma-event-id="evt-mlDqfEvES5J1Dfi">
+    Register for Sunday Run
+  </a>
+</div>
 
 <script id="luma-checkout" src="https://embed.lu.ma/checkout-button.js"></script>
 
