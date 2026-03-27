@@ -45,21 +45,34 @@ h2{
   font-weight:400;
 }
 
-/* FIXED BOTTOM SECTION */
+/* bottom section */
 .bottom{
   padding:40px;
   display:flex;
   justify-content:center;
 }
 
-/* BUTTON STYLE */
+/* PREMIUM BUTTON */
 .luma-checkout--button{
-  font-size:1.3rem;
-  color:#4da3ff;
-  text-decoration:underline;
-  cursor:pointer;
+  display:inline-block;
+  background-color:#000;
+  color:#fff;
+  padding:14px 36px;
+  font-size:0.9rem;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  text-decoration:none;
+  border-radius:2px;
+  transition:all 0.25s ease;
 }
 
+/* hover effect */
+.luma-checkout--button:hover{
+  background-color:#111;
+  transform:translateY(-2px);
+}
+
+/* mobile */
 @media (max-width:600px){
   h1{
     font-size:2rem;
@@ -67,6 +80,11 @@ h2{
 
   h2{
     font-size:1.2rem;
+  }
+
+  .luma-checkout--button{
+    padding:12px 28px;
+    font-size:0.8rem;
   }
 }
 </style>
@@ -85,7 +103,7 @@ h2{
     class="luma-checkout--button"
     data-luma-action="checkout"
     data-luma-event-id="evt-mlDqfEvES5J1Dfi">
-    Register for Sunday Run
+    REGISTER
   </a>
 </div>
 
