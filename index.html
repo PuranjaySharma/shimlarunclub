@@ -52,24 +52,39 @@ h2{
   justify-content:center;
 }
 
+/* button group */
+.button-group{
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+  align-items:center;
+}
+
 /* PREMIUM BUTTON */
 .luma-checkout--button{
   display:inline-block;
   background-color:#000;
   color:#fff;
   padding:14px 36px;
-  font-size:0.9rem;
+  font-size:0.85rem;
   letter-spacing:2px;
   text-transform:uppercase;
   text-decoration:none;
   border-radius:2px;
   transition:all 0.25s ease;
+  min-width:280px;
+  text-align:center;
 }
 
-/* hover effect */
+/* hover */
 .luma-checkout--button:hover{
   background-color:#111;
   transform:translateY(-2px);
+}
+
+/* highlight Sunday button */
+.button-group a:last-child{
+  transform:scale(1.05);
 }
 
 /* mobile */
@@ -85,6 +100,7 @@ h2{
   .luma-checkout--button{
     padding:12px 28px;
     font-size:0.8rem;
+    min-width:220px;
   }
 }
 </style>
@@ -98,13 +114,25 @@ h2{
 </div>
 
 <div class="bottom">
-  <a
-    href="https://luma.com/event/evt-mlDqfEvES5J1Dfi"
-    class="luma-checkout--button"
-    data-luma-action="checkout"
-    data-luma-event-id="evt-mlDqfEvES5J1Dfi">
-    SUNDAY RUN
-  </a>
+  <div class="button-group">
+
+    <a
+      href="https://luma.com/event/evt-chxw6zxmZggf81V"
+      class="luma-checkout--button"
+      data-luma-action="checkout"
+      data-luma-event-id="evt-chxw6zxmZggf81V">
+      FRIDAY FAST LOOPS | APRIL 3
+    </a>
+
+    <a
+      href="https://luma.com/event/evt-KsJggYo3WyW296R"
+      class="luma-checkout--button"
+      data-luma-action="checkout"
+      data-luma-event-id="evt-KsJggYo3WyW296R">
+      SUNDAY RUN | APRIL 5
+    </a>
+
+  </div>
 </div>
 
 <script id="luma-checkout" src="https://embed.lu.ma/checkout-button.js"></script>
